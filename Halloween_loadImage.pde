@@ -1,24 +1,15 @@
-//Click and Drag your cursor to "carve" the pumpkins
-
+size(500,500);
+background(0);
 PImage img;
-
-void setup() {
-  size(800, 500);
-  img = loadImage("pumpkins.png");
-  image(img, 0, 0);
-}
-
-void draw() 
-{
-  save("YOURNAME.Halloween.png");
-}
-
-void mouseDragged()
-{
-  //"Carves" the pumpkins
-  //blendMode optional, might be problematic with a light or white background
-  blendMode(OVERLAY); 
-  noStroke();
-  fill(255, 200, 25);
-  ellipse(mouseX, mouseY, 5, 5);
-}
+PImage img2;
+img = loadImage("Fiery_King_Boo_Artwork.png");
+img2 = loadImage("DarkKingBoo.png");
+image(img,0,50,200,200);
+image(img2,225,200,300,250);
+stroke(0,255,0);
+strokeWeight(20);
+line(0,500,500,0);
+textAlign(CENTER);
+textSize(100);
+text("VS",250,300);
+save("MATTHEW.Halloween.png");
