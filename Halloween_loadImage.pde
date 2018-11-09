@@ -12,4 +12,3 @@ line(0,500,500,0);
 textAlign(CENTER);
 textSize(100);
 text("VS",250,300);
-save("MATTHEW.Halloween.png");
